@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d48843c53.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="content first-content">
+        <div class="first-columm">
+            <h2 class="title">Bem vindo novamente</h2>
+            <p class="description description-primary">Mantenha-se conectado conosco</p>
+            <p class="description description-primary">Por favor efetue login com seus dados pessoais</p>
+            <button class="btn btn-primary" type="submit">Entrar</button>
+        </div>
+        <div class="second-columm">
+            <h2 class="title title-second">Crie sua conta</h2>
+            <div class="social-media">
+                <ul class="list-social-media">
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                    </a>
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-google-plus-g"></i>
+                        </li>
+                    </a>
+                    <a class="link-social-media" href="#">
+                        <li class="item-social-media">
+                            <i class="fab fa-linkedin-in"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <p class="description description-second">Ou utilize seu e-mail para registro</p>
+            <form class="form" method="post" action="login.php">
+                <label class="label-input">
+                    <i class="fas fa-user icon-modify"></i>
+                    <input type="text" id="login" name="login" placeholder="Nome" required>
+                </label>
+                <label class="label-input">
+                    <i class="fas fa-envelope icon-modify"></i>
+                    <input type="email" id="email" name="email" placeholder="E-mail" >
+                </label>
+                <label class="label-input">
+                    <i class="fas fa-lock icon-modify"></i>
+                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                </label>
+                <button class="btn btn-second" type="submit" >Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- login screen -->
+
+</div>
+</body>
+</html>
