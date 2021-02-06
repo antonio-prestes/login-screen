@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8d48843c53.js" crossorigin="anonymous"></script>
+    <script rel="script" src="script.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -40,10 +42,10 @@
                 </ul>
             </div>
             <p class="description description-second">Ou utilize seu e-mail para registro</p>
-            <form class="form" method="post" action="login.php">
+            <form class="form" name="form" method="post" action="login.php" onsubmit="return validaCampo(); return false;">
                 <label class="label-input">
                     <i class="fas fa-user icon-modify"></i>
-                    <input type="text" id="login" name="login" placeholder="Nome" required>
+                    <input type="text" id="login" name="login" placeholder="Nome" >
                 </label>
                 <label class="label-input">
                     <i class="fas fa-envelope icon-modify"></i>
@@ -51,9 +53,9 @@
                 </label>
                 <label class="label-input">
                     <i class="fas fa-lock icon-modify"></i>
-                    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+                    <input type="password" id="senha" name="senha" placeholder="Senha">
                 </label>
-                <button class="btn btn-second" type="submit" >Cadastrar</button>
+                <button class="btn btn-second" type="submit">Cadastrar</button>
             </form>
         </div>
     </div>
